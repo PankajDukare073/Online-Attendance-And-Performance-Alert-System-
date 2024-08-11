@@ -1,0 +1,18 @@
+SMAP
+addteacher_jsp.java
+JSP
+*S JSP
+*F
++ 0 addteacher.jsp
+addteacher.jsp
+*L
+5,62:47
+68,10:111
+77,3:121
+80,4:125
+83:129
+84:130,3
+85:133
+86,2:135
+87,108:137
+*E

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        <style>
+         body
+            {
+              height: 100%;
+              background-image:url(image/home4.jpg);
+              background-size: cover;
+            }
+       table{
+              font-family: Calibri; 
+              color:blue; 
+              font-size:30px; 
+              font-style: normal;
+              font-weight: bold;
+              background-color:lightpink;
+              border: 2px solid navy
+            }
+       input[type=text],input[type=password],input[type=email]
+          {
+            width:100%;
+            padding:10px 8px;
+            margin:8px 0;
+            display:inline-block;
+            border:1px solid #ccc;
+            box-sizing:border-box;
+          }
+     
+       h1
+         {
+            margin:0;
+            background-image:url(image/home1.jpg);
+            text-shadow:2px 3px white;
+            text-align: center;
+            color:red;
+            font-style: italic;
+            font-size:70px;
+            background-size: cover;
+         }
+      
+    </style>
+    </head>
+    <body>
+        <center>
+            <form name="rsfrm" action="rcollegedata.jsp" method="get">
+              <h1>Online Attendance And Performance Alert System</h1>
+              <h2 style=" border:5px solid #f1f1f1; width: 20%"><img src="image/school.png" alt="Girl in a jacket" style="width:200px;height:150px;"><br>College Registration</h2>
+        </center>  
+             <table align="center" cellpadding = "10">
+                <tr>
+                    <td>College name:</td>
+                    <td><input type="text" name="rct1" placeholder="Enter College Name" value="" required/></td>
+                </tr>
+                <tr>
+                    <td>College Code:</td>
+                    <td><input type="text" name="rct2" placeholder="Enter College code" value="" required/></td>
+                </tr>
+                <tr>
+                <tr>
+                     <td>Admin Username:</td>
+                     <td><input type="text" name="rct3" placeholder="Enter Admin User Name" value="" required/></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="rct4" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" value=""/></td>
+                </tr>
+                <tr>
+               
+                    <td>ADDRESS:<br /><br /></td>
+                    <td><textarea  rows="4" cols="90" name="rct5" placeholder="Enter College Address" required ></textarea></td>
+                </tr>
+                <tr>
+                    <td>EMAIL ID:</td>
+                    <td><input type="email" name="rct6" value="" placeholder="Enter Email Id of College" required/></td>
+               </tr>
+               <tr>
+                   <td>MOBILE NUMBER:</td>
+                   <td><input type="text" pattern="[0-9]{10}" name="rct7" value="" placeholder="Enter Collage Mobile Number" required /></td>
+               </tr>
+               <tr>
+                  <td>PIN CODE:</td>
+                 <td><input type="text" name="rct8" value="" pattern="[0-9]{6}" title="Must contain six number" placeholder="Enter Collage Pin Code" required/></td>
+               </tr>
+               <tr>
+                   <td>STATE:</td>
+                   <td><input type="text" name="rct9" value="Maharastra" required/></td>
+               </tr>
+               <tr>
+                    <td>COUNTRY:</td>
+                    <td><input type="text" name="rct10" value="India" required/></td>
+               </tr>
+                <tr>
+                    <td></td><td><input type="submit" value="Submit" style="font-size:30px;"><input type="reset" value="Reset" style="font-size:30px; margin-left:275px;"></td>
+               </tr>
+         </table>
+      </form> 
+    </body>
+</html>
